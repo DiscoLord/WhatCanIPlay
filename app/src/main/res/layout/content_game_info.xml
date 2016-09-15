@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="boriszeus.whatcaniplay.GameInfoActivity"
+    tools:showIn="@layout/activity_game_info"
+    android:background="#33d3d3d3">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_margin="16dp"
+       android:id="@+id/game_info_layout">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="start"
+           android:textSize="20sp"
+           android:id="@+id/game_description_info"
+           android:paddingBottom="25dp"
+           android:shadowColor="#ffffff"
+           android:shadowRadius="2"
+           android:text="54"
+           android:textColor="#000000"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/game_score_info"
+           android:text="Kek"
+           android:textSize="25sp"
+           android:shadowColor="#ffffff"
+           android:shadowRadius="2"
+           android:textColor="#000000"
+           android:singleLine="false"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingTop="15dp"
+           android:paddingBottom="10dp"
+           android:textSize="22sp"
+           android:text="@string/store_pages"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingBottom="50dp">
+           <ImageView
+               android:layout_width="58dp"
+               android:layout_height="58dp"
+               android:src="@drawable/steam"
+               android:layout_marginTop="4dp"
+               android:id="@+id/steam_image_view"
+               android:layout_marginRight="30dp"
+               android:onClick="goToSteamClick"/>
+
+           <ImageView
+               android:layout_width="64dp"
+               android:layout_height="64dp"
+               android:src="@drawable/gog"
+               android:layout_toRightOf="@id/steam_image_view"
+               android:id="@+id/gog_image_view"
+               android:onClick="goToGogClick"/>
+       </RelativeLayout>
+
+
+   </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

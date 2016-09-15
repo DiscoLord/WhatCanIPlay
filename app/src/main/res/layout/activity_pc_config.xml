@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_margin="10dp"
+    tools:context="boriszeus.whatcaniplay.PcConfigActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:text="@string/videocard_Head_String"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nvidia_RadioButton_String"
+                android:id="@+id/nVidiaRadioButton"
+                android:layout_weight="1"
+                android:onClick="onNvidiaRadioButtonClick"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ati_RadioButton_String"
+                android:id="@+id/atiRadioButton"
+                android:layout_weight="1"
+                android:onClick="onAtiRadioButtonClick"/>
+    </RadioGroup>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoCardSpinner">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cpu_Head_String"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intel_RadioButton_Text"
+            android:id="@+id/intelRadioButton"
+            android:layout_weight="1"
+            android:onClick="onIntelRadioButtonClick"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amd_RadioButton_Text"
+            android:id="@+id/amdRaioButton"
+            android:layout_weight="1"
+            android:onClick="onAmdRadioButtonClick"/>
+    </RadioGroup>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cpuSpinner">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ram_Head_String"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/ramEditText"
+            android:layout_weight="1"
+            android:text="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ram_Size_String"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/configOkButton"
+        android:text="@string/ok_Button_String"
+        android:layout_gravity="center"
+        android:onClick="okButtonClick"/>
+
+</LinearLayout>

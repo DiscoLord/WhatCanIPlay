@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Во что поиграть?</string>
+    <string name="videocard_Head_String">Видеокарта</string>
+    <string name="nvidia_RadioButton_String">NVidia</string>
+    <string name="ati_RadioButton_String">ATI</string>
+    <string name="cpu_Head_String">Центральный процессор</string>
+    <string name="intel_RadioButton_Text">Intel</string>
+    <string name="amd_RadioButton_Text">AMD</string>
+    <string name="ram_Head_String">Оперативная память</string>
+    <string name="ram_Size_String">Мб</string>
+    <string name="ok_Button_String">OK</string>
+    <string name="cancel_Button_String">Отмена</string>
+    <string-array name="string_array_menu">
+        <item>Изменить конфигурацию</item>
+        <item>Руководство</item>
+        <item>О приложении</item>
+    </string-array>
+    <string name="title_activity_game_info">Информация об игре</string>
+    <string name="action_settings">Настройки</string>
+    <string name="store_pages">Страницы в магазине:</string>
+
+</resources>

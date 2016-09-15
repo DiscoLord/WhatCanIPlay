@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">WhatCanIPlay</string>
+    <string name="videocard_Head_String">Video Card</string>
+    <string name="nvidia_RadioButton_String">NVidia</string>
+    <string name="ati_RadioButton_String">ATI</string>
+    <string name="cpu_Head_String">CPU</string>
+    <string name="intel_RadioButton_Text">Intel</string>
+    <string name="amd_RadioButton_Text">AMD</string>
+    <string name="ram_Head_String">RAM</string>
+    <string name="ram_Size_String">Mb</string>
+    <string name="ok_Button_String">OK</string>
+    <string name="cancel_Button_String">Cancel</string>
+    <string-array name="string_array_menu">
+        <item>Change configuration</item>
+        <item>Tutorial</item>
+        <item>About</item>
+    </string-array>
+    <string name="title_activity_game_info">GameInfoActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="store_pages">Store pages:</string>
+
+</resources>
